@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width:100vw;
+        }
+        .s1{
+            height:150px;
+            width:150px;
+        }
+        .title{
+            background-color: black;
+        }
+        #img1{
+            margin-top:20px;
+            margin-left:70vw;
+        }
+        #img2{
+            margin-top:20px;
+            margin-left:18vw;
+        }
+        .heading{
+            text-align:center;
+            font-family: sans-serif;
+            color:white;
+        }
+        .title>h1{
+            font-size:80px; 
+        }
+        .title>h2{
+            font-size:40px;
+        }
+        .myself{
+            margin-left:35vw;
+            margin-top:50px;
+            display:flex;
+            justify-content: center;
+            align-content:center;
+            width:25vw;
+            flex-wrap:wrap;
+        }
+        .myself>h2{
+            font-size: 2.5rem;
+            font-family: sans-serif;
+        }
+        .myself>p{
+            font-size:20px;
+            color:purple;
+            font-family: sans-serif;
+            /* text-align:justify; */
+            width:30vw;
+            text-align: center;
+        }
+        .ram1{
+            height:300px;
+            width:300px;
+            border-radius:50%;
+        }
+        #head1{
+            text-align:center;
+            margin-top:80px;
+            font-family:sans-serif;
+            font-size: 40px;;
+            color:yellow;
+        }
+        .d1{
+            background-color:black;
+        }
+        .skill{
+            margin-top:50px;
+            display:grid;
+            grid-template-columns: 1300px;
+            gap:30px;
+        }
+        .dev{
+            height:300px;
+            width:350px;
+            border:1px solid black;
+            grid-row-start: 1;
+            grid-row-end:3;
+        }
+        .container1{
+            display:grid;
+            grid-template-columns: 25vw 50vw;
+            grid-template-rows: 100px 240px;
+            gap:20px;
+            margin-left:18vw;
+        }
+        .container2{
+            display:grid;
+            grid-template-columns: 25vw 50vw;
+            grid-template-rows: 100px 240px;
+            gap:20px;
+            margin-left:18vw;
+        }
+        .head2{
+            text-align:center;
+            font-family:sans-serif;
+            color:white;
+        }
+        .p2{
+            color: cyan;
+            font-size:20px;
+            text-align: center;
+            font-family: sans-serif;
+        } 
+        .contact{
+            text-align:center;
+            margin-top:50px;
+        }
+        #head4{
+            font-family: sans-serif;
+            font-size:40px;
+            color: black;
+        }
+        #head5{
+            font-family: sans-serif;
+            color:red;
+            font-size:30px;
+        }
+        button{
+            margin-top:30px;
+            background-color: black;
+            color: cyan;
+            padding:10px;
+            font-size: 30px;
+            border-radius:5%;
+            font-family: sans-serif;
+        }
+        .footer{
+            margin-top:30px;
+            background-color: black;
+            color:white;
+            height:200px;
+        }
+        ul{
+            list-style: none;
+            display:flex;
+            justify-content: center;
+            gap:30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;;
+            align-items: center;
+            height:150px;
+            color:white;
+        }
+        #head6{
+            text-align: center;
+            font-family: sans-serif;
+        }
+        a>button{
+            cursor: pointer;
+        }
+        ul>#l1:hover{
+            color:cyan;
+            font-size:25px;
+        }
+        ul>#l2:hover{
+            color:cyan;
+            font-size:25px;
+        }
+        ul>#l3:hover{
+            color:cyan;
+            font-size:25px;
+        }
+        @media (max-width:340px){
+            #img1{
+                margin-left:0vw;
+            }
+            #img2{
+                margin-left:0vw;
+            }
+            .title>h1{
+            font-size:40px; 
+            }
+            .title>h2{
+            font-size:30px;
+            }
+            .ram1{
+                height:220px;
+                width:220px;
+            }
+            .myself>h2{
+                font-size:1.8rem;
+            }
+            .dev{
+                height:250px;
+                width:250px;
+            }
+            .container1{
+                grid-template-rows: 100px 130px 50px 1fr;
+                grid-template-columns:35vw 40vw;
+                margin-left:5vw;
+            }
+            .container2{
+                grid-template-rows: 100px 130px 50px 1fr;
+                grid-template-columns:35vw 40vw;
+                margin-left:5vw;
+            }
+            .head2{
+                grid-area:3/1/4/3;
+            }
+            .p2{
+                grid-area:4/1/5/3;
+            }
+            #head4{
+                font-size: 30px;
+            }
+            button{
+                font-size:15px;
+            }
+            ul{
+                flex-direction:column;
+            }
+            .skill{
+                grid-template-columns: 100px;
+            }
+        }
+        @media (max-width:480px) and (min-width:319px){
+            #img1{
+                margin-left:52vw;
+            }
+            #img2{
+                margin-left:6vw;
+            }
+            .title>h1{
+            font-size:40px; 
+            }
+            .ram1{
+                height:250px;
+                width:250px;
+            }
+            .myself>h2{
+                font-size:2rem;
+            }
+            .dev{
+                height:250px;
+                width:300px;
+            }
+            .container1{
+                grid-template-rows: 100px 130px 50px 1fr;
+                grid-template-columns:35vw 28vw;
+                margin-left:10vw;
+            }
+            .container2{
+                grid-template-rows: 100px 130px 50px 1fr;
+                grid-template-columns:35vw 28vw;
+                margin-left:10vw;
+            }
+            .head2{
+                grid-area:3/1/4/3;
+            }
+            .p2{
+                grid-area:4/1/5/3;
+            }
+            #head4{
+                font-size:35px;
+            }
+            button{
+                font-size:20px;
+            }
+            ul{
+                flex-direction:column;
+            }
+            .skill{
+                grid-template-columns: 300px;
+            }
+        }
+        @media (max-width:1200px) and (min-width:481px){
+            #img1{
+                margin-left:65vw;
+            }
+            #img2{
+                margin-left:12vw;
+            }
+            .title>h1{
+            font-size:60px; 
+            }
+            button{
+                font-size:25px;
+            }
+        }
+        @media (max-width:1310px) and (min-width:970px){
+            .dev{
+                height:250px;
+                width:300px;
+            }
+            .container1{
+                grid-template-rows:100px 150px 1fr;
+                grid-template-columns:25vw 40vw;
+            }
+            .container2{
+                grid-template-rows:100px 150px 1fr;
+                grid-template-columns:25vw 40vw;
+            }
+            .p2{
+                margin-top:0;
+                grid-row-start: 3;
+                grid-row-end:4;
+                grid-column-start:1;
+                grid-column-end:3;
+            }
+            .skill{
+                grid-template-columns: 750px;
+            }
+        }
+        @media (max-width:970px)and (min-width:750px){
+            .container1{
+                grid-template-rows: 100px 200px 50px 1fr;
+                grid-template-columns:40vw;
+                margin-left:30vw;
+            }
+            .container2{
+                grid-template-rows: 100px 200px 50px 1fr;
+                grid-template-columns:40vw;
+                margin-left:30vw;
+            }
+            .skill{
+                grid-template-columns: 750px;
+            }
+        }
+        @media (max-width:750px)and (min-width:481px){
+            .container1{
+                grid-template-rows: 100px 200px 50px 1fr;
+                grid-template-columns:35vw 28vw;
+                margin-left:15vw;
+            }
+            .container2{
+                grid-template-rows: 100px 200px 50px 1fr;
+                grid-template-columns:35vw 28vw;
+                margin-left:15vw;
+            }
+            .head2{
+                grid-area:3/1/4/3;
+            }
+            .p2{
+                grid-area:4/1/5/3;
+            }
+            .skill{
+                grid-template-columns: 450px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <img src="setting.jpg" alt="setting image" id="img1" class="s1"/>
+        <h1 class="heading">I'm Ramanath</h1>
+        <h2 class="heading" style="color:yellow">Full Stack Developer</h2>
+        <img src="setting.jpg" alt="setting image" id="img2" class="s1"/>
+    </div>
+    <div class="myself">
+        <img src="ram.jpg" alt="ram photo" class="ram1"/>
+        <h2>Hey!</h2>
+        <p>I am a Fresher and i am currently learning Full Stack development and my aim is to work hard and acheive success in life.</p>
+    </div>
+    <div class="d1">
+        <h2 id="head1">My Skills</h2>
+    <div class="skill">
+        <div class="container1">
+            <img src="front.jpeg" alt="front end image" id="dev1" class="dev"/>
+            <h2 class="head2">Front End Development</h2>
+            <p class="p2" style="margin-top:50px">Front end development is very helpful as a user can communicate or interact with the client.HTML,CSS,JS,React JS and Bootstrap are used for Front end development.Front-end development involves creating the parts of a website or web application that users interact with directly.</p>
+        </div>
+        <div class="container2">
+            <img src="back.jpg" alt="back end image" id="dev2" class="dev"/>
+            <h2 class="head2" id="head3">Back End Development</h2>
+            <p class="p2" style="margin-top:50px">Back-end development focuses on the server-side of web applications, handling everything that users don’t see but is crucial for the website’s functionality. This includes working with databases, server logic, APIs, and ensuring the overall performance and security of the application</p>
+        </div>
+    </div><hr>
+    </div>
+        <div class="contact">
+            <h2 id="head4">Get In Touch</h2>
+            <h3 id="head5">If you like full stack development,do contact me</h3>
+            <a href="mailto:ramanathbhat64@gmail.com"><button type="button">Contact Me</button></a>
+        </div>
+        <div class="footer">
+            <ul>
+                <li id="l1"><a href="https://www.linkedin.com/in/ramanath-bhat-122b96296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></li>
+                <li id="l2"><a href="https://www.instagram.com/ramanath_bhat_17?igsh=aDNxMG54ZzZzaTU4">Instagram</a></li>
+                <li id="l3"><a href="https://www.facebook.com/profile.php?id=100070382234863&mibextid=ZbWKwLs">Facebook</a></li>
+            </ul>
+            <h3 id="head6">&copy;Ramanath H Bhat</h3>
+        </div>
+</body>
+</html>
